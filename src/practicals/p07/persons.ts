@@ -1,7 +1,7 @@
 export interface Person {
-  firstName?: string;
-  lastName?: string;
-  age?: number;
+  firstName?: string
+  lastName?: string
+  age?: number
 }
 
 export function sortPersons(persons: Person[]): Person[] {
@@ -17,10 +17,10 @@ export function sortPersons(persons: Person[]): Person[] {
         p.age <= 120
     )
     .sort((a, b) => {
-      if (a.firstName! < b.firstName!) return -1;
-      if (a.firstName! > b.firstName!) return 1;
-      if (a.lastName! < b.lastName!) return -1;
-      if (a.lastName! > b.lastName!) return 1;
-      return a.age! - b.age!;
-    });
+      if (a.firstName! < b.firstName!) return -1
+      if (a.firstName! > b.firstName!) return 1
+      if (a.lastName! < b.lastName!) return -1
+      if (a.lastName! > b.lastName!) return 1
+      return a.age! - b.age!
+    })
 }
