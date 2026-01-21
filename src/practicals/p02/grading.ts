@@ -1,4 +1,4 @@
-export function grading(input?: string): void {
+export default function grading(input?: string): void {
   const score = Number(input)
 
   if (!input || isNaN(score) || score < 0 || score > 100) {
