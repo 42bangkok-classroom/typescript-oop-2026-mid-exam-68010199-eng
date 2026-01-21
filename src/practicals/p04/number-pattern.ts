@@ -1,10 +1,14 @@
-export function numberPattern(n: number): string {
-  let result = ""
+export function numberPattern(n: number): void {
+  if (typeof n !== "number" || n <= 0) return
+
   for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= i; j++) {
-      result += j.toString()
+    let line = ""
+    line += " ".repeat(n - i)
+
+    for (let j = i; j >= 1; j--) {
+      line += j.toString()
     }
-    if (i < n) result += "\n"
+
+    console.log(line)
   }
-  return result
 }
