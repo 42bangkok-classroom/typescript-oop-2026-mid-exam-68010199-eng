@@ -1,18 +1,17 @@
-declare const process: any
+export default function grading(input: string): string {
+  const score = Number(input)
 
-const input = process.argv[2]
-const score = Number(input)
-
-if (input === undefined || isNaN(score) || score < 0 || score > 100) {
-  console.log("Invalid input")
-} else if (score < 50) {
-  console.log("Grade F")
-} else if (score < 60) {
-  console.log("Grade D")
-} else if (score < 70) {
-  console.log("Grade C")
-} else if (score < 80) {
-  console.log("Grade B")
-} else {
-  console.log("Grade A")
+  if (input === undefined || isNaN(score) || score < 0 || score > 100) {
+    return "Invalid input"
+  } else if (score < 50) {
+    return "Grade F"
+  } else if (score < 60) {
+    return "Grade D"
+  } else if (score < 70) {
+    return "Grade C"
+  } else if (score < 80) {
+    return "Grade B"
+  } else {
+    return "Grade A"
+  }
 }
