@@ -1,7 +1,11 @@
 export function fizzbuzz(input?: string): void {
+  if (input === undefined) {
+    return
+  }
+
   const n = Number(input)
 
-  if (!input || isNaN(n) || n <= 0) {
+  if (isNaN(n) || n <= 0) {
     return
   }
 
