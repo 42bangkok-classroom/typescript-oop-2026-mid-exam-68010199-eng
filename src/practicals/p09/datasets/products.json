@@ -1,0 +1,26 @@
+[
+  {
+    "id": 101,
+    "name": "Notebook",
+    "price": 50,
+    "category": "stationery"
+  },
+  {
+    "id": 102,
+    "name": "Pen",
+    "price": 10,
+    "category": "stationery"
+  },
+  {
+    "id": 103,
+    "name": "Bottle",
+    "price": 120,
+    "category": "kitchen"
+  },
+  {
+    "id": 104,
+    "name": "Bag",
+    "price": 500,
+    "category": "fashion"
+  }
+]
